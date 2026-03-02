@@ -70,13 +70,15 @@ Neo4j     Vector + BM25
 | 层级 | 技术 |
 | --- | --- |
 | **前端** | Streamlit 1.52+ |
-| **LLM** | DeepSeek-V3 (Chat) + DeepSeek-R1 (Reasoner) |
-| **Embedding** | BGE-Large-zh-v1.5（768维） |
-| **Reranker** | BGE-Reranker-Large（Cross-Encoder） |
+| **LLM** | DeepSeek-V3（对话）+ DeepSeek-R1（推理） |
+| **Embedding** | BGE-Large-zh-v1.5（768维，本地部署） |
+| **Reranker** | BGE-Reranker-Large（Cross-Encoder，本地部署） |
 | **向量数据库** | ChromaDB 1.4+ |
-| **图数据库** | Neo4j 5.x |
-| **稀疏检索** | Rank-BM25 + Jieba |
-| **基础设施** | Docker Compose + NVIDIA GPU |
+| **图数据库** | Neo4j 5.x（Cypher 查询） |
+| **稀疏检索** | Rank-BM25 + Jieba 分词 |
+| **文档解析** | MinerU（PDF）+ MarkItDown（Word） |
+| **基础框架** | Python 3.10+ + Asyncio |
+| **部署** | Docker Compose + NVIDIA GPU |
 
 ---
 
