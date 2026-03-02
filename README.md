@@ -1,8 +1,8 @@
-# HVACR-KG-RAG | HVAC Knowledge Graph RAG System
+# HVAC-KG-RAG | HVAC Knowledge Graph RAG System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python) ![Neo4j](https://img.shields.io/badge/Neo4j-5.x-008CC1?logo=neo4j) ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker) ![DeepSeek](https://img.shields.io/badge/LLM-DeepSeek-green) ![License](https://img.shields.io/badge/License-MIT-yellow) ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit)
 
-**HVACR-KG-RAG** 是一款专为 **HVACR 暖通行业**设计的工业级混合检索增强生成系统（Hybrid RAG）。
+**HVAC-KG-RAG** 是一款专为 **暖通行业**设计的工业级混合检索增强生成系统（Hybrid RAG）。
 
 系统突破了传统 RAG 仅依赖向量检索的局限，通过融合**知识图谱（Knowledge Graph）**、**多智能体协作提取**和**多轮对话指代消解**，实现对工业复杂逻辑链的高精度检索与推理。
 
