@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+.git
+.env
+venv
+neo4j_data
+test
+chroma_db
+models
+# 注意：models 和 data 我们通过 volume 挂载，不打入镜像层，减小体积

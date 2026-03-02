@@ -1,0 +1,67 @@
+# 运行程序
+python step8_extract_fixed_final.py
+
+# 建立虚拟环境
+cd D:\
+cd KG_Test
+python -m venv test
+
+# 激活虚拟环境
+cd D:\KG_Test
+.\test\Scripts\activate
+
+# 进入微调空间
+wsl
+cd ~
+conda activate qwen_train_v3
+
+# 进入推理环境
+wsl
+cd ~
+conda activate qwen_inference
+
+# 环境列表
+conda env list
+
+# 保存退出
+按 Ctrl + O，回车，再按 Ctrl + X
+
+# 点燃炼丹炉
+~/start_factory.sh
+
+# 浏览器
+localhost:7860
+
+# 看显存
+watch -n 1 nvidia-smi
+
+# 运行RAG
+http://localhost:8501
+
+# 安装依赖
+python -m pip install --upgrade pip
+pip install -r requirements.txt 
+pip freeze > requirements.txt
+
+#Smoke Test
+python -c "from pipeline import UltimateKnowledgeExtractor; print('Pipeline loaded!')"
+
+#调试
+python main_rag.py --debug
+
+python rag/indexer.py
+python tools/auto_import.py
+python main_rag.py
+
+PPO算法的数据格式要求是什么？它能不能直接用SFT产生的数据？
+
+# Anaconda PowerShell
+# 1. 创建名为 mineru 的隔离环境
+conda create -n mineru python=3.10 -y
+
+# 2. 激活环境
+(base) PS C:\Users\Administrator> conda activate mineru
+conda activate mineru
+
+
+

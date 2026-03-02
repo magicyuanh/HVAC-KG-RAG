@@ -1,0 +1,14 @@
+{
+  "timestamp": "6e862f09-d07d-44da-b2d0-daca0c19f5d2",
+  "input_dir": "D:\\KG_Test\\raw_data",
+  "output_file": "D:\\KG_Test\\jsonl\\structured_chunks.jsonl",
+  "stats": {
+    "success": 1,
+    "failed": 0,
+    "skipped": 0,
+    "pdf": 1,
+    "word": 0,
+    "txt": 0
+  },
+  "total_chunks": 65
+}

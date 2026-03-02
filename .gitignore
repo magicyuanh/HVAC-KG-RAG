@@ -1,0 +1,124 @@
+# ========================================
+# ArchRAG Project .gitignore
+# ========================================
+
+# ============ 敏感信息 ============
+.env
+*.key
+*.pem
+secrets/
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============ 虚拟环境 ============
+test/
+venv/
+ENV/
+env/
+.venv
+
+# ============ 大模型文件 ============
+# 模型权重文件太大，不适合上传到 GitHub
+models/
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# ============ 数据库文件 ============
+# 向量数据库
+chroma_db/
+*.sqlite3
+*.db
+
+# 图数据库
+neo4j_data/
+
+# BM25 索引
+bm25/*.pkl
+
+# ============ 数据文件 ============
+# 原始数据
+raw_data/
+*.pdf
+*.docx
+*.xlsx
+
+# 中间数据
+jsonl/*.jsonl
+graph/*.csv
+
+# 微调数据
+fine_tuning_data/
+
+# ============ 日志文件 ============
+logs/
+monitor/
+*.log
+
+# ============ IDE 配置 ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============ Docker ============
+# 保留 Dockerfile 和 docker-compose.yml
+# 但忽略运行时产生的文件
+.docker/
+
+# ============ Claude Code ============
+.claude/
+.agents/
+
+# ============ 临时文件 ============
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# ============ 测试覆盖率 ============
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ============ Jupyter Notebook ============
+.ipynb_checkpoints
+
+# ============ 其他 ============
+*.bak
+*.swp
+skills-lock.json
